@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/styles.css')
+  body
+    header
+      a(href="/") Home
+      a(href="/add") Add Article
+      a(href="/about") About
+      a(href="/download-sample") Download
+    br
+    br
+    h1= title
+    form(action="/add" method="POST")
+      label(for="title") Title:
+      input(type="text" name="title" required)
+      br
+      label(for="author") Author:
+      input(type="text" name="author")
+      br
+      label(for="body") Body:
+      textarea(name="body" required)
+      br
+      button(type="submit") Submit
+    a(href="/") Back to Home

@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='public/styles.css')
+  body
+    header
+      a(href="/") Home
+      a(href="/add") Add Article
+      a(href="/about") About
+      a(href="/download-sample") Download
+    br
+    br
+    h1= title
+    a(href="/add") Add Article
+    a(href="/about") About
+    ul
+      each article in articles
+        li
+          h2= article.title
+          p= article.body
+          p Author: #{article.author}
