@@ -1,0 +1,25 @@
+{
+  "name": "alab318.2",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rainikka/Per1Scholas/ProblemSets.git"
+  },
+  "author": "Rainikka Corprew",
+  "license": "ISC",
+  "description": "ALAB318.3",
+  "dependencies": {
+    "express": "^5.1.0",
+    "pug": "^3.0.3",
+    "static": "^2.0.0",
+    "urlencode": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
