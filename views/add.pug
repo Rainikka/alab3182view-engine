@@ -14,13 +14,13 @@ html
     h1= title
     form(action="/add" method="POST")
       label(for="title") Title:
-      input(type="text" name="title" required)
+      input(type="text" name="title")
       br
       label(for="author") Author:
       input(type="text" name="author")
       br
       label(for="body") Body:
-      textarea(name="body" required)
+      textarea(name="body")
       br
       button(type="submit") Submit
     a(href="/") Back to Home
